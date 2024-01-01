@@ -12,11 +12,11 @@ employer1.AddScore(9);
 employer1.AddScore(2);
 employer1.AddScore(8);
 
-employer2.AddScore(6);
-employer2.AddScore(5);
-employer2.AddScore(3);
 employer2.AddScore(9);
-employer2.AddScore(8);
+employer2.AddScore(9);
+employer2.AddScore(9);
+employer2.AddScore(9);
+employer2.AddScore(9);
 
 employer3.AddScore(7);
 employer3.AddScore(6);
@@ -39,10 +39,10 @@ foreach (var employer in employers)
     if (employer.Result > maxResult)
     {
         employeeWithMaxResult = employer;
+         maxResult = employer.Result;
     }
 }
 
-var Result = employeeWithMaxResult;
 Console.WriteLine("Pracownik z najwyższą liczbą to " + employeeWithMaxResult.Name + " " + employeeWithMaxResult.Surname + " w wieku " + employeeWithMaxResult.Age + "  lat");
 
 
